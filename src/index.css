@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Satoshi', sans-serif;
+}
+
+.App{
+    min-height: 100vh;
+    transition: all 0.25s ease-in;
+}
+
+nav{
+    transition: all 0.25s ease-in;
+}
+
+.dark{
+    background: #161513;
+    color: #F0F2F5
+}
+
+
+.light{
+    background: #F0F2F5;
+    color: #161513;
+}
+
+.light .skill-container{
+    background: #F0F2F5;
+    color: #161513;
+    transition: all 0.25s ease-in;
+}
+
+.light nav *{
+    color: #161513;
+}
+
+a{
+    color: #F0F2F5
+}
+
+.light footer a {
+    color: #161513;
+    border: 1px solid #161513;
+    border-radius: 9999px;
+}
+
+.about-form input.dark, .about-form textarea.dark{
+    background: #1c1c22;
+}
+
+.about-form input.light, .about-form textarea.light{
+    background: #F0F2F5;
+}
